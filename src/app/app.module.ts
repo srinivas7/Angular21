@@ -7,6 +7,7 @@ import { HelloComponent } from './hello/hello.component';
 import { FirstComponent } from './first/first.component';
 import { ChildComponent } from './child/child.component';
 import { FormsModule } from '@angular/forms';
+import { Test2Component } from './test2/test2.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     HelloComponent,
     FirstComponent,
-    ChildComponent
+    ChildComponent,
+    Test2Component
   ],
   imports: [
     BrowserModule,
