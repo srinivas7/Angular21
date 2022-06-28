@@ -1,0 +1,24 @@
+App component starts here
+
+<span>Hello Angular!</span>
+
+{{text}}
+
+
+<div>
+    <span>
+        name is..... {{name}}
+    </span>
+</div>
+
+<app-hello [textDataaa]="text"></app-hello>
+<app-first #firstcomp (customEve)="fromFirstComp()"></app-first>
+
+<input [(ngModel)] = 'name' (ngModelChange)="modelChangeFunction()"/>
+
+{{name}}
+app component ends here
+
+<button (click)="sayHello(name)">SayHello</button>
+<button (click)="clearName()">Clear Name</button>
+
