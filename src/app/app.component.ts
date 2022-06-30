@@ -1,4 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
+import { DataService } from './data.service';
 
 @Component({
   selector: 'app-root',
@@ -12,10 +14,13 @@ export class AppComponent {
   name = 'testasdfasdfa';
   @ViewChild('firstcomp') fistCompnent:any;
   
+  constructor(public router: Router) {
+
+  }
   sayHello(name: string) {
-    console.log('hello....', name);
-    debugger;
-    console.log('fist cmp is..', this.fistCompnent);
+  //  this.service.getData().subscribe(res => {
+  //   console.log(res);
+  //  });
   }
 
   clearName() {
@@ -33,5 +38,15 @@ export class AppComponent {
 
   fromFirstComp() {
     console.log('custom event from first comp');
+  }
+
+  navigateToFirstComp() {
+    console.log('from navigateToFirstComp');
+    this.router.navigate(['/first']);
+  }
+
+  navigateToHelloComp() {
+    console.log('from navigateToHelloComp');
+    this.router.navigate(['/hello']);
   }
 }

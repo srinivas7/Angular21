@@ -21,4 +21,14 @@ app component ends here
 
 <button (click)="sayHello(name)">SayHello</button>
 <button (click)="clearName()">Clear Name</button>
+<div>
+    <a routerLink="/first" href="">Navigate to First comp</a>
+    <br/>
+    <a href="/hello">Navigate to Hello comp</a>
+    <br/>
+    <button (click)="navigateToFirstComp()">Navigate to First comp</button>
+    <br/>
+    <button (click)="navigateToHelloComp()">Navigate to Hello comp</button>
+</div>
 
+<router-outlet></router-outlet>
