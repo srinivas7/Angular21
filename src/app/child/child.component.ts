@@ -10,6 +10,7 @@ export class ChildComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log('I did many changes');
   }
 
 }
