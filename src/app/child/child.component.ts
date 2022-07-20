@@ -11,6 +11,14 @@ export class ChildComponent implements OnInit {
 
   ngOnInit(): void {
     console.log('I did many changes');
+    console.log('I did many changes');
+    console.log('I did many changes');
+    console.log('I did many changes');
+    console.log('I did many changes');
+  }
+
+  method1() {
+    console.log('asdfasdfa asdf asd)f asd');
   }
 
 }
