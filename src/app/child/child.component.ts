@@ -13,8 +13,7 @@ export class ChildComponent implements OnInit {
     console.log('I did many changes');
     console.log('I did many changes');
     console.log('I did many changes');
-    console.log('I did many changes');
-    console.log('I did many changes');
+    
   }
 
   method1() {
